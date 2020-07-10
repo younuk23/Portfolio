@@ -296,6 +296,14 @@ button{
   cursor: pointer;
 }
 
+.toggle__button{
+  position: absolute;
+  color:var(--color-white);
+  font-size: 24px;
+  right: 40px;
+  display: none;
+}
+
 /* home*/
 #home{
   background-color:#FAFAFA;
@@ -468,6 +476,7 @@ space-around속성을 이용해 임시방편으로 맞추었음 더 유용한 �
 
 .testmonial__speech-bubble{
   background-color: #FAFAFA;
+  border-radius: 30px;
 }
 
 .testmonial__author a{
@@ -508,3 +517,43 @@ space-around속성을 이용해 임시방편으로 맞추었음 더 유용한 �
   transition: all 300ms ease;
 }
 
+/* For below 768px screen width */
+@media screen and (max-width: 768px){
+  p,h1,h2,h3,span{
+    word-break: keep-all;
+  }
+  
+  .toggle__button{
+    display:block;
+  }
+
+  .toggle__button:hover{
+    transform: scale(1.2);
+    transition: all 300ms ease;
+  }
+  #navbar{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar__menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+  }
+
+  .home__continer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skillset{
+    flex-direction: column;
+  }
+  .contact__h2{
+    white-space: nowrap;
+  }
+}
