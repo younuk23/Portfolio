@@ -522,10 +522,6 @@ space-around속성을 이용해 임시방편으로 맞추었음 더 유용한 �
   p,h1,h2,h3,span{
     word-break: keep-all;
   }
-  
-  .toggle__button{
-    display:block;
-  }
 
   .toggle__button:hover{
     transform: scale(1.2);
@@ -552,8 +548,5 @@ space-around속성을 이용해 임시방편으로 맞추었음 더 유용한 �
 
   .skillset{
     flex-direction: column;
-  }
-  .contact__h2{
-    white-space: nowrap;
   }
 }
